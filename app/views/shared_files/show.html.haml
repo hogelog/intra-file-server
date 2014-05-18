@@ -1,0 +1,4 @@
+%h1= @shared_file.path
+
+= link_to 'Download', download_shared_file_path(@shared_file), class: 'btn btn-default'
+= link_to 'Delete', shared_file_path(@shared_file), method: :delete, class: 'btn btn-default'

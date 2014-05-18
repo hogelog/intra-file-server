@@ -1,0 +1,6 @@
+%h1 Files
+
+%ul
+  - @shared_files.each do |shared_file|
+    %li
+      = link_to File.basename(shared_file.path), shared_file_path(shared_file)
